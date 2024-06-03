@@ -1,4 +1,4 @@
-// import { TEInput, TERipple } from "tw-elements-react";
+import { TEInput } from "tw-elements-react";
 
 export default function Login() {
 	return (
@@ -19,25 +19,27 @@ export default function Login() {
 												alt="logo"
 											/>
 											<h4 className="mb-12 mt-1 pb-1 text-xl font-semibold">
-												We are The Lotus Team
+												iCatalyst
 											</h4>
 										</div>
 
 										<form>
 											<p className="mb-4">Please login to your account</p>
 											{/* <!--Username input--> */}
-											{/* <TEInput
+											<TEInput
 												type="text"
-												label="Username"
+												// label="Username"
 												className="mb-4"
-											></TEInput> */}
+												placeholder="Username or email address"
+											></TEInput>
 
 											{/* <!--Password input--> */}
-											{/* <TEInput
+											<TEInput
 												type="password"
-												label="Password"
+												// label="Password"
 												className="mb-4"
-											></TEInput> */}
+												placeholder="Password"
+											></TEInput>
 
 											{/* <!--Submit button--> */}
 											<div className="mb-12 pb-1 pt-1 text-center">
@@ -84,7 +86,7 @@ export default function Login() {
 								>
 									<div className="px-4 py-6 text-white md:mx-6 md:p-12">
 										<h4 className="mb-6 text-xl font-semibold">
-											We are more than just a company
+											Texto a definir
 										</h4>
 										<p className="text-sm">
 											Lorem ipsum dolor sit amet, consectetur adipisicing elit,
