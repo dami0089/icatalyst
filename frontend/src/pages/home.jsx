@@ -1,15 +1,15 @@
 import { Card, Typography } from "@material-tailwind/react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 // import Cargando from "@/components/Cargando";
 
 export function Home() {
-	// const navigate = useNavigate();
+	const navigate = useNavigate();
 
-	// const handleVerLocales = (e) => {
-	// 	e.preventDefault();
-	// 	navigate("/locales");
-	// };
+	const handleVerProfesores = (e) => {
+		e.preventDefault();
+		navigate("/listado-profesores");
+	};
 
 	// const handleVerUsuarios = (e) => {
 	// 	e.preventDefault();
@@ -26,7 +26,7 @@ export function Home() {
 			<div className="mt-10 flex flex-wrap justify-center gap-10 ">
 				<Card
 					className="flex w-full max-w-md flex-row items-center p-6 hover:cursor-pointer md:max-w-lg lg:max-w-xl"
-					// onClick={(e) => handleVerLocales(e)}
+					onClick={(e) => handleVerProfesores(e)}
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
