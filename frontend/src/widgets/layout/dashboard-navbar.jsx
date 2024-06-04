@@ -42,7 +42,7 @@ export function DashboardNavbar() {
 				<div className="flex justify-between gap-6 md:flex-col-reverse md:items-center lg:flex-row">
 					<div className="flex items-center justify-center">
 						<div>
-							<img src="/img/icon-192x192.png" height={50} width={50} />
+							<img src="/isologo.png" height={50} width={50} />
 						</div>
 						<div className="ml-4 text-[24px] font-bold text-gray-700 md:text-[40px]">
 							iCatalyst
