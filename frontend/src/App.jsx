@@ -3,6 +3,8 @@ import Login from "./pages/loginPage";
 import RutaProtegida from "./layouts/RutaProtegida";
 import Home from "./pages/home";
 import Profesores from "./pages/listadoProfesores";
+import EjemplosPage from "./pages/ejemplosPage";
+import ActivityExample from "./pages/ejemploActividad";
 
 function App() {
 	return (
@@ -27,6 +29,14 @@ function App() {
 
 			<Route path="/notificaciones" element={<RutaProtegida />}>
 				<Route index element={<Home />} />
+			</Route>
+
+			<Route path="/ejemplos" element={<RutaProtegida />}>
+				<Route index element={<EjemplosPage />} />
+			</Route>
+
+			<Route path="/ejemplo-actividad" element={<RutaProtegida />}>
+				<Route index element={<ActivityExample />} />
 			</Route>
 		</Routes>
 	);
