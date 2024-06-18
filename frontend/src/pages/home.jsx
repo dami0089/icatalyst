@@ -75,7 +75,7 @@ export function Home() {
   return (
     <div className="p-[50px]">
       <section className="mb-10 bg-neutral-300/50 p-5 rounded-lg">
-        <h2 className="text-3xl font-semibold">Activities</h2>
+        <h2 className="text-3xl font-semibold">Strategies</h2>
         <p className="text-base font-extralight mb-2">
           lorem ipsum dolor sit amet
         </p>

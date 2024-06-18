@@ -29,7 +29,7 @@ const CardBackground = ({ title, description, background, backgroundColor, navig
     return (
         <div 
             style={cardStyle} 
-            className="shrink-0 flex flex-col justify-between rounded-lg shadow max-w-sm cursor-pointer p-4 h-full h-[400px] w-[250px] transform transition-transform duration-300 hover:scale-105"
+            className="shrink-0 flex flex-col justify-between rounded-lg shadow max-w-sm cursor-pointer p-4 h-[400px] w-[250px] transform transition-transform duration-300 hover:scale-105"
             onClick={() => {console.log(navigateTo); navigate(navigateTo)}}
         >
             <div className="flex flex-wrap items-center" style={contentStyle}>
