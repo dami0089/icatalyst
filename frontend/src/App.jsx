@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Profesores from "./pages/listadoProfesores";
 import EjemplosPage from "./pages/ejemplosPage";
 import ActivityExample from "./pages/ejemploActividad";
+import SidekickComponent from "./components/activityExample/Activity";
 
 function App() {
 	return (
@@ -13,6 +14,10 @@ function App() {
 
 			<Route path="/inicio" element={<RutaProtegida />}>
 				<Route index element={<Home />} />
+			</Route>
+
+			<Route path="/activity/new/:id" element={<RutaProtegida />}>
+				<Route index element={<SidekickComponent/>}></Route>
 			</Route>
 
 			<Route path="/listado-profesores" element={<RutaProtegida />}>

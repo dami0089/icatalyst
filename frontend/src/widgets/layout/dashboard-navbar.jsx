@@ -10,6 +10,7 @@ import {
 	UserCircleIcon,
 	ArrowLeftOnRectangleIcon,
 } from "@heroicons/react/24/solid";
+import { useNavigate } from 'react-router-dom';
 
 // import useAuth from "@/hooks/useAuth";
 
@@ -17,6 +18,7 @@ import {
 
 export function DashboardNavbar() {
 	// const { cerrarSesionAuth, auth } = useAuth();
+	const navigate = useNavigate();
 
 	// const navigate = useNavigate();
 
@@ -40,7 +42,7 @@ export function DashboardNavbar() {
 			{/* {auth.rol ? ( */}
 			<>
 				<div className="flex justify-between gap-6 md:flex-col-reverse md:items-center lg:flex-row">
-					<div className="flex items-center justify-center">
+					<div className="flex items-center justify-center" onClick={() => navigate('/inicio')}>
 						<div>
 							<img src="/isologo.png" height={50} width={50} />
 						</div>
